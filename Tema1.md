@@ -80,5 +80,16 @@
 
 ### Uso de las Bases de Datos ###
 
+- Algunos de los usos mas frecuentes son:
+  - Bases de Datos Administrativas.
+  - Bases de Datos Contables.
+  - Bases de Datos para motores de búsqueda.
+  - Científicas.
+  - Configuraciones.
+  - Bibliotecas.
+  - Censos.
+  - Virus.
+  - Otros.
+
 
 
