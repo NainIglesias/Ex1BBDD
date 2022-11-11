@@ -166,10 +166,18 @@ Las relaciones jerárquicas también se les llama relaciones ES_UN y tienen las 
   - Inclusiva parcial
   
 - Ejemplos
-  1. Exclusiva total![Ejemplo de una relacion exclusiva total](ExclusivaTotal.png)
-  2. Exclusiva parcial ![Ejemplo de una relación exclusiva parcial](ExclusivaParcial.png)
-  3. Inclusiva total ![Ejemplo de una relación inclusiva total](InclusivaTotal.png)
-  4. Inclusiva parcial ![Ejemplo de una relación inclusiva parcial](InclusivaParcial.png)
+  1. Exclusiva total
+   ![Ejemplo de una relacion exclusiva total](ExclusivaTotal.png)
+   ---
+  3. Exclusiva parcial 
+   ![Ejemplo de una relación exclusiva parcial](ExclusivaParcial.png)
+   ---
+  4. Inclusiva total 
+   ![Ejemplo de una relación inclusiva total](InclusivaTotal.png)
+   ---
+  5. Inclusiva parcial 
+   ![Ejemplo de una relación inclusiva parcial](InclusivaParcial.png)
+   ---
 
 #### Reglas para construir el modelo Entidad/Relación Extendido ####
 - Herencia de los atributos: Cuando todas las entidades subtipo tienen todas un mismo atributo se sube a la entidad supertipo.
