@@ -152,7 +152,6 @@ Las relaciones jerárquicas también se les llama relaciones ES_UN y tienen las 
 - ![Ejemplo relación exclusiva sin solapamiento](ExclusivaSinSolapamiento.png)
 - **Inclusiva** (con solapamiento): Una ocurrencia de la entidad superconjunto puede ser na ocurrencia de varias entitades subconjunto a la vez. Se representa sin poner arco.
 - ![Ejemplo relación incluvia con solapamiento](InclusivaConSolapamiento.png)
-- 
 ---
 - **Total** (obligatoria): Una ocurrencia de la entidad superconjunto debe ser una ocurrencia de alguna entidad subconjunto. Se representa gráficamente con un círculo sobre la relación es_un.
 - ![Ejemplo de una relación total obligatoria](TotalObligatoria.png)
