@@ -80,18 +80,18 @@ Elementos que forman el modelo Entidad/Relación:
 
 ### Atributos ####
 
-  Son características o propiedades de aquello que representan le entidad. Al hablar de atributos hay que hablar también de dominios, que es el conjunto de valores que puede tomar un atributo.
+Son características o propiedades de aquello que representan le entidad. Al hablar de atributos hay que hablar también de dominios, que es el conjunto de valores que puede tomar un atributo.
 
-  Tipos de atributos:
+ Tipos de atributos:
 
-    - Atributo identificador : Distingue unívocamente una ocurrencia de entidad del resto de ocurrencias
-    - Atributo identificador alternativo: Son otros atributos indentificadores pero menos importantes.
-    - Atributo descriptor : Caracteriza a una ocurrencia de una entidad pero no la diferencia del resto de la ocurrencia.
-    - Atributos Multivaluados/Multivalorados: Pueden tomar mas de un valor.
-    - Atributos monovalorados: Solo pueden tener un valor.
-    - Atributos compuestos : Es un atributo que tiene atributos mas específicos.
-    - Atributos obligatorio u opcional : Si un atributo debe tomar un valor o no.
-    - Atributos derivados : Es un atributo en el que su valor se obtiene a partir de otros elementos del esquem E/R.
+   - Atributo identificador : Distingue unívocamente una ocurrencia de entidad del resto de ocurrencias
+  - Atributo identificador alternativo: Son otros atributos indentificadores pero menos importantes.
+  - Atributo descriptor : Caracteriza a una ocurrencia de una entidad pero no la diferencia del resto de la ocurrencia.
+  - Atributos Multivaluados/Multivalorados: Pueden tomar mas de un valor.
+  - Atributos monovalorados: Solo pueden tener un valor.
+  - Atributos compuestos : Es un atributo que tiene atributos mas específicos.
+  - Atributos obligatorio u opcional : Si un atributo debe tomar un valor o no.
+  - Atributos derivados : Es un atributo en el que su valor se obtiene a partir de otros elementos del esquem E/R.
 
 ### Relaciones ###
 
