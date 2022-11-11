@@ -130,4 +130,51 @@ Tipos de dependencia:
  - Dependencia en existencia: Se produce cuando la entidad débil necesita a la fuerte para existir. Si desaparece la ocurrencia de la entidad fuerte, la débil carece de sentido.
    - Empleado tiene un hijo. (Hijo depende de empleado por lo que si quitamos empleado, hijo pasa a no tener sentido). 
  - Dependencia en identificación: Se produce cuando la entidad débil necesita a la entidad fuerte para identificarse. Por sí sola, la débil no es capaz de identificar de manera unívoca sus ocurrencias.
- - Las provincias tienen municipios (En este caso si eliminamos la entidad Provincias, Municipios sigue teniendo sentido por si solo pero no se puede identificar). 
+   - Las provincias tienen municipios (En este caso si eliminamos la entidad Provincias, Municipios sigue teniendo sentido por si solo pero no se puede identificar). 
+
+### Modelo Entidad/Relación Extendido###
+
+Contiene todos los elementos anteriores más las relaciones jerárquicas.
+Una **relación jerárquica** se produce cuando una entidad se puede subdividir en otras, la cuales mantienen una relación **ES_UN** con la anterior.
+Las relaciones jerárquicas también se les llama relaciones ES_UN y tienen las siguientes propiedades:
+  - La relacioón jerárquica puede ser n-aria.
+  - Las entidades subconjunto heredan prodiedades y el comportamiento de la entidad superconjunto(**herencia**).
+  - El comportamiento y las propiedades de la entidad subconjunto puede cambiar respecto al resto de entidades subconjunto.
+  - En cada subconjunto se puede redefinir las propiedades y comportamiento(**polimorfismo**).
+  - Una entidad puede ser subconjunto de varias entidades superconjunto(**herencia múltiple**). Se debe evitar la herencia múltiple porque puede provocar incosistencias.
+  - Una relación jerárquica representa una **especialización** de una entidad(entidad superconjunto) en varias entidades subconjunto. Puede ser porque:
+    - Sean diferentes las propiedades.
+    - Las propiedades tienen valores diferentes.
+
+#### Tipos de especialización ####
+
+- **Exclusiva** (sin solapamiento): Una ocurrencia de la entidad superconjunto es una ocurrencia de una y sólo una entidad subconjunto. Se representa gráficamente con un arco.
+  ![Ejemplo relación exclusiva sin solapamiento](ExclusivaSinSolapamiento.png)
+- **Inclusiva** (con solapamiento): Una ocurrencia de la entidad superconjunto puede ser na ocurrencia de varias entitades subconjunto a la vez. Se representa sin poner arco.
+  ![Ejemplo relación incluvia con solapamiento](InclusivaConSolapamiento.png)
+---
+- **Total** (obligatoria): Una ocurrencia de la entidad superconjunto debe ser una ocurrencia de alguna entidad subconjunto. Se representa gráficamente con un círculo sobre la relación es_un.
+  ![Ejemplo de una relación total obligatoria](TotalObligatoria.png)
+- **Parcial** (opcional): Una ocurrencia de la entidad superconjunto puede no ser una ocurrencia de ninguna entidad subconjunto. Se representa gráficamente sin el círculo.
+  ![Ejemplo de una relación parcial opcional](ParcialOpcional.png)
+---
+
+- Por lo tanto, una relación jerárquica puede ser:
+  - Exclusiva total
+  - Exclusiva parcial
+  - Inclusiva total
+  - Inclusiva parcial
+  
+- Ejemplos
+  1. Exclusiva total![Ejemplo de una relacion exclusiva total](ExclusivaTotal.png)
+  2. Exclusiva parcial ![Ejemplo de una relación exclusiva parcial](ExclusivaParcial.png)
+  3. Inclusiva total ![Ejemplo de una relación inclusiva total](InclusivaTotal.png)
+  4. Inclusiva parcial ![Ejemplo de una relación inclusiva parcial](InclusivaParcial.png)
+
+#### Reglas para construir el modelo Entidad/Relación Extendido ####
+- Herencia de los atributos: Cuando todas las entidades subtipo tienen todas un mismo atributo se sube a la entidad supertipo.
+- Relaciones con las entidades subtipo: En un modelo E/R Extendido, las entidades se pueden relacionar con la entidad supertipo o con las entidades subtipo. 
+- Hay varios casos en los que se debe mantener la relación entre la entidad y la entidad subtipo:
+  - Cuando una entidad sólo se relaciona con una de las entidades subtipo.
+  - Cuando las relaciones entre una entidad y las entidades subtipo tienen cardinalidades distintas. O cuando la participación de las entidades en la relación es distinta.
+  - Cuando alguna de las relaciones entre la entidad y las entidades subtipo tienen atributos propios y el resto no o son diferentes atributos.
