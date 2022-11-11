@@ -166,6 +166,7 @@ Las relaciones jerárquicas también se les llama relaciones ES_UN y tienen las 
   - Inclusiva parcial
   
 - Ejemplos:
+  ----
   **1. Exclusiva total**
    ![Ejemplo de una relacion exclusiva total](ExclusivaTotal.png)
    ---
