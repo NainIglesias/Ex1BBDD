@@ -103,3 +103,31 @@ Elementos que forman el modelo Entidad/Relación:
 
   Consiste en indicar exactamente cuál es la participación de una entidad en la relación. Para ello, se define el número mínimo y máximo de ocurrencias de una entidad.
   
+  - Participación mímima:
+    - Participación mínima cero: Significa  que puede haber ocurrencias de una entidad que no estén asociadas a ninguna ocurrencia de la otra entidad.
+    - Participación mínima uno: Significa que toda ocurrencia de una entidad debe estar asociada a una ocurrencia de la otra entidad.
+
+### Cardinalidad de una relación ###
+
+  La cardinalidad es el tipo de asociación establecida entre las entidades.
+  - Cardinalidad 1:1 : Una ocurrencia se asocia como máximo acon una única ocurrencia de entidad.
+  - Cardinalidad 1:N : Una ocurrencia de la entidad A se asocia con un indeterminado número de ocurrencias de la entidad B, pero cada ocurencia de la entidad B sólo se le corresponde una ocurrencia de la entidad A.
+  - Cardinalidad N:N : Una ocurrencia de entidad se asocia con un número indeterminado de ocurrencias de entidad y viceversa.
+  
+### Atributos propios de una relación ###
+
+Son aquellos atributos cuyo valir sólo se puede obtener en la relación, puesto que dependen de las entidades que participan en la relación.
+Ejemplo :
+![ejemplo de atributo propio](ejemploAtributoPropio.png)
+
+### Entidades fuertes y débiles. Relaciones de dependencia ###
+
+Existen dos tipos de entidades:
+- **Entidades fuerte**: No dependen de ninguna otra.
+- **Entidades débiles**: Dependen de otra entidad.
+
+Tipos de dependencia: 
+ - Dependencia en existencia: Se produce cuando la entidad débil necesita a la fuerte para existir. Si desaparece la ocurrencia de la entidad fuerte, la débil carece de sentido.
+   - Empleado tiene un hijo. (Hijo depende de empleado por lo que si quitamos empleado, hijo pasa a no tener sentido). 
+ - Dependencia en identificación: Se produce cuando la entidad débil necesita a la entidad fuerte para identificarse. Por sí sola, la débil no es capaz de identificar de manera unívoca sus ocurrencias.
+ - Las provincias tienen municipios (En este caso si eliminamos la entidad Provincias, Municipios sigue teniendo sentido por si solo pero no se puede identificar). 
