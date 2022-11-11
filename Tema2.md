@@ -132,7 +132,7 @@ Tipos de dependencia:
  - Dependencia en identificación: Se produce cuando la entidad débil necesita a la entidad fuerte para identificarse. Por sí sola, la débil no es capaz de identificar de manera unívoca sus ocurrencias.
    - Las provincias tienen municipios (En este caso si eliminamos la entidad Provincias, Municipios sigue teniendo sentido por si solo pero no se puede identificar). 
 
-### Modelo Entidad/Relación Extendido###
+### Modelo Entidad/Relación Extendido ###
 
 Contiene todos los elementos anteriores más las relaciones jerárquicas.
 Una **relación jerárquica** se produce cuando una entidad se puede subdividir en otras, la cuales mantienen una relación **ES_UN** con la anterior.
